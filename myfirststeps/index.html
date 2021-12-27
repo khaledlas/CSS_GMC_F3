@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- "contol :" header -->
+    <header>
+      <div id="header_logo">
+        <img
+          class="logoresponsive"
+          src="https://seeklogo.com/images/L/land-rover-defender-110-logo-319A609CD3-seeklogo.com.png"
+          alt="logo"
+          width="75"
+        />
+      </div>
+      <div id="header_elements" class="topnav">
+        <a href="#about"><span>Qui sommes-nous ?</span></a>
+        <a href="#Projects"><span>Nos projets</span></a>
+        <a href="#Contents"><span>Restaurer votre defender</span></a>
+      </div>
+    </header>
+    <main>
+      <!-- ABOUT SECTION -->
+      <!-- <div class="link-social">
+        <div>
+          <a href="https://www.facebook.com/khaled.lasram" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Facebook-icon-1.png/640px-Facebook-icon-1.png"
+              alt=""
+              width="25"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/khaledlasram/" target="_blank">
+            <img
+              src="https://th.bing.com/th/id/R.8812201cb01723d5fefc5b60261018e5?rik=cZgJsU83TyIwmg&pid=ImgRaw&r=0"
+              alt=""
+              width="50"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.pinterest.fr/khaledlasram" target="_blank">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+              width="25"
+            />
+          </a>
+        </div>
+      </div> -->
+      <div class="rounded-social-buttons">
+        <a
+          class="social-button facebook"
+          href="https://www.facebook.com/khaled.lasram"
+          target="_blank"
+          ><i class="fa fa-facebook-f"></i
+        ></a>
+
+        <a
+          class="social-button linkedin"
+          href="https://www.linkedin.com/in/khaledlasram/"
+          target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+
+        <a
+          class="social-button instagram"
+          href="https://www.pinterest.fr/khaledlasram"
+          target="_blank"
+          ><i class="fa fa-pinterest"></i
+        ></a>
+      </div>
+
+      <section id="about">
+        <div>
+          <h1>I am Khaled Lasram</h1>
+          <div>
+            <img src="./assets/khaled.PNG" alt="" width="100" />
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            ullam porro, consequuntur dolorum incidunt nisi ab inventore fuga
+            optio delectus fugiat, itaque odit adipisci veniam, placeat dolores
+            culpa nesciunt repellat.
+          </p>
+          <div class="portfolio">
+            <a
+              href="https://www.arkonik.com/custom-defenders/"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <button type="button">Nos réalisations</button>
+            </a>
+            <!-- <button>
+            <imgs
+              src="data:image/png;base64,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"
+              alt="lien youtube"
+              width="25"
+              onclick="window.location.href='https://www.youtube.com/watch?v=o43yuH0MW-E';"
+              target="_blank"
+            />
+          </button> -->
+            <!-- <a
+              href="https://www.youtube.com/watch?v=o43yuH0MW-E"
+              target="_blank"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAolBMVEX////kKyb///798fHjCwDiHBXnFAr5jovkKCPjJyHjIRv+/PzjJB7++PjlGBDsR0P2v774xcPzraz5kY/ypaT5zczlFAriGRH75eTykY/86+r1urn6mZf6nZv61NP72tn2eXboMi3ybWr6q6ntg4HmQDz72djyqqn8paT0s7Lxm5j4g4DzX1zsS0bpOzfxVVL1aGXoW1joVFHwlZPqZWLrb2zrwCy/AAAGDUlEQVR4nO2daXvaOhBGTbGJbYxZAmbfEkIwwZCN///XrmSTkJuyJJqREX3e87Vp6KmNZkYaSZYFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzKVeKvc543mrVa7V+HDcem/eL4XA4GNwKbg4h/2AwGAyHi0XzsdGI+/1avd4ajcedYqV8aR1BpVjsjOpxc9l9ulsl64JfyrAFpSgKJe0U5zjZD7TTH46i7O+mhMH0YfM8uXlrNvqtcS9X5XKnFS9n2+dk6keCUAj4gee5boEV13W9wHfaYSR93fXm7ql7Xx8XtfvVJ1VfWgkpZqUzvoHvO2EUTl8XHY16va5v+16OYgdUg7a9qmvyKy/88KJ2HwT2aq5DcLyJLq32iR8O+AXjKLi01xfcaFVhFlzYl5b6hrPu/duC4k194FTsm/MV3ONs+LKATinP2Pdjwic2w8SkQeYLdo1J8N7Ed1TirXkG1OLUyHdUEi5YDJdmZDKHcKccmXi5etlM9CRRzGDYMi8U7gleGQxvnEtrnMJmCPtrg19S8Zr2yYI9k19SkbvRo37dbEMvIRsO25eWOI1LjhcvhmZsH4QjquHa2IQmI6RGxF5guKHTJRqO1FO2di5hxn8nGvaVDf3mOsrh+XvUOvhNOaOxK5Wmr9+RnHw/+aofbYtPriydtm5HhzgH/q4cLIThH1FcdgPNATWihYtyojxcSMM/wrE3i7Tm7iEtMy2qh8PMUDp2Jrbyu36esEky7KlnNB+GqeM20uZIDIgd9XC4N5SO862tKf3zZyTDkfo021dD6Th60ePo35EMazzPMHNsJTocgxXJMOYz/CP/w5KIPZXzElJS01QPZn8ZSsly/GBzL/ivSYZLXkPxHMsNlzeVcwukie+uerA+aJg6NoOQ09EhGc7YDaVjZVlgnEePSKn3TD1QHzVMU7kuXyoXkaZMJ1oMs3SVK5UrkYqLO02GqeMkZHmOpTHFUL14OmcoHcdbjudYIjXXEOYSzxqmju/0NKdEKhBXWg3TdPWV6kgzfNVsKB3rRMdSi2K4UU8jf2goHWsJJZUjGRImMX5uKFPy/lTd8QoMU8fGVDVdLVGaMfMyzFK5qVq6eiWG0rG4dFRKGZohoQ/jt4apY9f+fZpzRYap46z9W8erMkxnHme/jI5XZzjf/suG4gn+PlG9IkM5N65QbFyNofwGKhX+V2IoR1FHrSC+CkPFSMhhmFPmrZjNXImhyEibihnpVRiKD3ks0CaIjTYUnxATKsOdocE1vqh8GRZqzDW0rNrGZlhsoxnqm4niWzA1czZR+LEtetMMn7UYigKCYSb405A0q69j3YK7+YRmyL/2pFhAnIC29qTeuHdslbszU05Aj1AirR/yrgHLVUPFAuIEIWkNmHMdXySgXcfhb8b0Sev46g203w1lARHpaMQk9mJw9dPIAqKgZ6MmsZ+mwdITJX7Ro7amb2JPlHoj+95Q/JrY5e/2+iB4oQhaLXJvoiiQOAqI4/gTkuGYamhZ9YSjgDiOQ+sv7dAivngJyMv053DeSIaEfdxyN8Joo9uP3OddUZ9OtCsjxgLiOCHx2AH1hhrvXV/3+lci4mk8W/V/ZU4bF6l7ZgiJaT64a+K+J0Kjdz54G5ogZTtCPvhboiEhIOYDeQ+pZe7BJhnEjV0WacY0F0LSPJTk1vTBlLwfv2b2mQoBdSgVQ43Zhs4N2dAqGD3UcByG9WT0F9FmOEbJ6MNNiFMYGRWTT8aw6QfwCN7MTU1dngPbiuaONRGtvv+kaWr27VW5DjF9MDRzs9kOFB6bOZxGtHnE/xGXLm1zAIe2ifsbS/MU/YT39PKhaS+qU+U9R9iyGqadBc1/0P48MSdo+M6Q3U9QHoZmnE4X2C/kwv4Ivdvw8ufqh/aK1Mh2jtqk6lz0boSV1rsRUuT9FsPZdlWdOrv7LXypy+3rut7ufosoyvV+iz3y0pVRbX9HifP3HSXts3eUOCbeUXKM7J6Z0e6emcbunpnBiXtmdhfNZPfMPH7eMzM35Z4ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAc4j8PLKeo9x7WegAAAABJRU5ErkJggg=="
+                alt="lien youtube"
+                width="25"
+              />
+            </a> -->
+            <div class="rounded-social-buttons">
+              <a
+                class="social-button youtube"
+                href="https://www.youtube.com/watch?v=o43yuH0MW-E"
+                target="_blank"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Projects">
+        <!-- Section Nos projets -->
+        <div>
+          <h1>Nos projets</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            possimus vel praesentium sapiente! Voluptatum repellat iste quod
+            laborum magnam? Dolor voluptas ullam porro est omnis fugiat ex,
+            error quo. Voluptatibus.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://th.bing.com/th/id/R.cfc27c79a14e183431b23161ea89b9a9?rik=G5GPUmxP4XF0Nw&pid=ImgRaw&r=0"
+            alt="def1"
+            width="200"
+          />
+          <img
+            src="https://zzkustom.com/wp-content/uploads/DefenderTD5.jpg"
+            alt="def2"
+            width="200"
+          />
+        </div>
+      </section>
+      <section id="Contents">
+        <!-- Restaurer votre defender -->
+        <div>
+          <h1>Restaurer votre defender</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi non
+            quod nisi quasi. Voluptatem eos ex unde odit harum iure accusamus
+            nulla voluptatibus, magni vero velit commodi ullam? Dolorum,
+            repudiandae.
+          </p>
+        </div>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/0kycdR9UlcQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/JVu6wN_GnCA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <h1>Restez connectés</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolores
+          voluptatem pariatur at, voluptates illum voluptas mollitia! Magnam
+          alias officia sit maxime excepturi repudiandae ad officiis? Delectus
+          dolorem ratione sint.
+        </p>
+        <!-- <form action="/action_page.php">
+          <label for="fname">Prénom :</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Nom :</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <input type="submit" value="Soumettre" />
+        </form> -->
+        <form
+          name="formUser"
+          action="RoundedSubmitButton.php"
+          method="post"
+          enctype="multipart/form-data"
+          class="formRounded"
+        >
+          <table>
+            <tbody>
+              <tr>
+                <td><label>Nom *</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="formUserName"
+                    name="formUserName"
+                    placeholder="Renseignez votre nom & prénom"
+                    value=""
+                    size="50"
+                    maxlength="50"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label>Email *</label></td>
+                <td>
+                  <input
+                    type="text"
+                    id="formUserEmail"
+                    name="formUserEmail"
+                    placeholder="Renseignez votre email"
+                    value=""
+                    size="50"
+                    maxlength="255"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input
+                    type="submit"
+                    id="formUserSubmit"
+                    name="formUserSubmit"
+                    value="Soumettre"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
